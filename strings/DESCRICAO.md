@@ -1,0 +1,6 @@
+Para fazer o teste 'strings' usei a linguagem JavaScript.
+Criei a let 'arrayPalavras' para receber o texto e transformá-lo num array de strings através do método 'split', assim seria mais fácil manipular as palavras sem cortá-las. As variáveis 'textoFormatado' e 'linha' receberam uma string vazia no início do código, para depois receberem o resultado.
+
+Em 'arrayPalavras', apliquei o método 'forEach', para o loop percorrer por todas as palavras do array criado e aplicar as regras, que são: o tamanho da linha + palavra não podem ser maiores que limite de caracteres permitido por linha (40), deve-se pular uma linha, assim, através do loop, o texto vai continuando nas próximas linhas sem ultrapassar o tamanaho de 40 caracteres.O método 'trim' foi usado para eliminar espaços desnecessários no início e final de cada linha, ela é composta somente por palavras no início e fim e espaço entre elas, em seguida vai para a próxima linha. No final do código, usei o 'module.exports' para que o código possa ser exportado e manipulado em outros arquivos.
+
+Para utilizar essa solução, o usuário deve colocar nos parâmetros da função 'formatarTexto': o texto a ser formatado, o tamanho máximo do texto (se for maior que o permitido, receberemos uma mensagem de erro - throw) e o limite de tamanho de cada linha.
